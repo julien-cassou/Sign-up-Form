@@ -14,40 +14,59 @@
         <div class="left-side">
             <div class="dark-background">
                 <img src="assets/img/odin-lined.png" alt="Odin Logo">
-                <p>O D I N</p>
+                <p>ODIN</p>
             </div>
             <p class="footer">Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
         </div>
         <div class="right-side">
-            <p>This is not a real online service! You know you need something like
-                this in your life to help you realize your deepest dreams. 
+            <p id="first-p">This is not a real online service! You know you need something<br> like
+                this in your life to help you realize your deepest dreams.<br>
                 Sign up <em>now</em> to get started.
             </p>
-            <p>You <em>know</em> you want to.</p>
-            <p id="p3">Let's do this!</p>
-    
+            <p id="second-p">You <em> know </em> you want to.</p>
         <form>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name">
-    
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name">
-    
-            <label for="email">EMAIL</label>
-            <input type="email" name="email">
-    
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="number" name="phone-number">
-    
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password">
-    
-            <label for="confirm-p">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-p">
+            <fieldset>
+                <legend>Let's do this!</legend>
+
+                <div class="line">
+                    <div class="form-group">
+                        <label for="first-name">FIRST NAME</label>
+                        <input class="form-input" type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">LAST NAME</label>
+                        <input class="form-input" type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+        
+                <div class="line">
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input class="form-input" type="email" id="email" name="email" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input class="form-input" type="number" id="phone-number" name="phone-number">
+                    </div>
+                </div>
+        
+                <div class="line">
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <input class="form-input" type="password" id="password" name="password" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="confirm-p">CONFIRM PASSWORD</label>
+                        <input class="form-input" type="password" id="confirm-p" name="confirm-p" required>
+                    </div>
+                </div>
+            </fieldset>
         </form>
-        <button>Create Account</button>
+        <input type="submit" value="Create Account" class="create-account">
     
-        <p>Already have an account?<a href="">Log in</a></p>
+        <p id="log-in">Already have an account? <a href="">Log in</a></p>
         </div>
 </main>
 
